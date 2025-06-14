@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="Initializing the project, installing the necessary dependencies">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/next.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/postcss.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/prisma/schema.prisma" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controllers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/middlewares/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/services/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Xverlxrd"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Xverlxrd/Hotel.git",
+    "accountId": "d7a6650c-ca09-4993-9c5a-4e04e0435466"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2yUCdYGwoqWg0g4vReTxr26CRrJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/User/WebstormProjects/Hotel/server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\User\\WebstormProjects\\Hotel\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\Hotel\server" />
+      <recent name="C:\Users\User\WebstormProjects\Hotel\server\src\types" />
+      <recent name="C:\Users\User\WebstormProjects\Hotel\server\src\services" />
+      <recent name="C:\Users\User\WebstormProjects\Hotel\server\src\middlewares" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\Hotel\server\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="" />
+      <created>1749879852762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749879852762</updated>
+      <workItem from="1749879853961" duration="1239000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initializing the project, installing the necessary dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initializing the project, installing the necessary dependencies" />
+  </component>
+</project>
