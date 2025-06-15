@@ -13,3 +13,88 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Client {
+  id         Int       @id @default(autoincrement())
+  lastName   String    @map("last_name")
+  firstName  String    @map("first_name")
+  middleName String?   @map("middle_name")
+  email      String    @unique
+  phone      String
+  passport   String    @unique
+  Booking    Booking[]
+
+  @@map("clients")
+}
+
+model Room {
+  id            Int          @id @default(autoincrement())
+  number        String       @unique
+  type          RoomType
+  category      RoomCategory
+  hasChildBed   Boolean      @default(false)
+  isAvailable   Boolean      @default(true)
+  pricePerNight Float        @default(1000.0)
+  Booking       Booking[]
+
+  @@map("rooms")
+}
+
+enum RoomType {
+  SINGLE
+  DOUBLE
+  TRIPLE
+}
+
+enum RoomCategory {
+  STANDARD
+  DELUXE
+  COMFORT
+}
+
+model Booking {
+  id         Int           @id @default(autoincrement())
+  clientId   Int
+  roomId     Int
+  startDate  DateTime
+  endDate    DateTime
+  status     BookingStatus @default(PENDING)
+  totalPrice Float?
+
+  client Client @relation(fields: [clientId], references: [id])
+  room   Room   @relation(fields: [roomId], references: [id])
+
+  @@map("bookings")
+}
+
+enum BookingStatus {
+  CONFIRMED
+  PENDING
+  CANCELLED
+}
+
+enum DayOfWeek {
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+  SUNDAY
+}
+
+model Tariff {
+  id          Int       @id @default(autoincrement())
+  dayOfWeek   DayOfWeek
+  coefficient Float
+
+  @@map("tariffs")
+}
+
+model Admin {
+  id       Int    @id @default(autoincrement())
+  login    String @unique
+  password String
+
+  @@map("admins")
+}
