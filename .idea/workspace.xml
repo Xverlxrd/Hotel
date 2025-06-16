@@ -4,83 +4,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="Initializing the project, installing the necessary dependencies">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/next.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/postcss.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/prisma/schema.prisma" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/controllers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/middlewares/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
+    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="Создание схемы БД">
+      <change afterPath="$PROJECT_DIR$/server/src/controllers/Auth/auth.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controllers/Tariffs/tariffs.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/services/Auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/services/Booking/booking.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/services/Clients/clients.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/services/Rooms/rooms.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/services/Tariffs/tariffs.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/types/auth.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/types/booking.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/types/clients.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/types/rooms.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/types/tariffs.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/Booking/booking.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/Clients/clients.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/Rooms/rooms.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Xverlxrd"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Xverlxrd&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Xverlxrd/Hotel.git",
-    "accountId": "d7a6650c-ca09-4993-9c5a-4e04e0435466"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Xverlxrd/Hotel.git&quot;,
+    &quot;accountId&quot;: &quot;d7a6650c-ca09-4993-9c5a-4e04e0435466&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2yUCdYGwoqWg0g4vReTxr26CRrJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/User/WebstormProjects/Hotel/server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\User\\WebstormProjects\\Hotel\\client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/WebstormProjects/Hotel/server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\User\\WebstormProjects\\Hotel\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\Hotel\server" />
@@ -89,8 +86,27 @@
       <recent name="C:\Users\User\WebstormProjects\Hotel\server\src\middlewares" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\Hotel\server\src\controllers\Auth" />
+      <recent name="C:\Users\User\WebstormProjects\Hotel\server\src\services\Auth" />
       <recent name="C:\Users\User\WebstormProjects\Hotel\server\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -107,6 +123,8 @@
       <option name="presentableId" value="Default" />
       <updated>1749879852762</updated>
       <workItem from="1749879853961" duration="1239000" />
+      <workItem from="1750006027444" duration="2977000" />
+      <workItem from="1750047544021" duration="4063000" />
     </task>
     <servers />
   </component>
