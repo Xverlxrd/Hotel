@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors';
 import dotenv from 'dotenv'
 import { PrismaClient } from './generated/prisma';
 import {authRouter} from "@/controllers/Auth/auth.controller";
@@ -15,7 +16,9 @@ export const prisma = new PrismaClient()
 async function Main() {
 
     app.use(express.json())
-
+    app.use(cors({
+        origin: 'http://localhost:3000'
+    }));
 
     app.use('/api/auth', authRouter)
     app.use('/api/clients', clientRouter)
