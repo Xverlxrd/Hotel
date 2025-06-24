@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="Fixed a CORS error, layout of the login page and notification component">
-      <change afterPath="$PROJECT_DIR$/client/public/Booking_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/Clients_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/Hellp_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/Rooms_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/Tarif_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/booking/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/clients/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/help/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/rooms/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/tarif/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/header/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/sidebar/sidebar.tsx" afterDir="false" />
+    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="Added Clients and Services pages">
+      <change afterPath="$PROJECT_DIR$/client/src/components/input/input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/modal/modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/services/inex.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/types/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/(auth)/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(auth)/login/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/(main)/clients/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(main)/clients/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/(main)/help/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(main)/help/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/Clients/clients.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/Clients/clients.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,8 +107,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +132,7 @@
       <workItem from="1750094003584" duration="2517000" />
       <workItem from="1750148054110" duration="4584000" />
       <workItem from="1750248087896" duration="12000" />
+      <workItem from="1750740163890" duration="10111000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed a CORS error, layout of the login page and notification component">
       <option name="closed" value="true" />
@@ -150,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750096089437</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed a CORS error, layout of the login page and notification component">
+      <option name="closed" value="true" />
+      <created>1750740277760</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750740277761</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initializing the project, installing the necessary dependencies" />
     <MESSAGE value="Fixed a CORS error, layout of the login page and notification component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a CORS error, layout of the login page and notification component" />
+    <MESSAGE value="Added Clients and Services pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Clients and Services pages" />
   </component>
 </project>

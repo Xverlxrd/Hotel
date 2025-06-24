@@ -113,4 +113,43 @@ router.put('/:id', async (req: Request, res: Response) => {
     }
 });
 
+router.delete('/:id', async (req: Request, res: Response) => {
+    try {
+        const id = parseInt(req.params.id);
+        if (isNaN(id)) {
+            return res.status(400).json({
+                success: false,
+                message: 'Invalid client ID'
+            });
+        }
+
+        const existingClient = await clientService.getClientById(id);
+        if (!existingClient) {
+            return res.status(404).json({
+                success: false,
+                message: 'Client not found'
+            });
+        }
+
+        await clientService.deleteClient(id);
+
+        res.json({
+            success: true,
+            message: 'Client deleted successfully'
+        });
+    } catch (error) {
+        if (error instanceof Error && error.message === 'Cannot delete client with active bookings') {
+            return res.status(400).json({
+                success: false,
+                message: error.message
+            });
+        }
+
+        res.status(500).json({
+            success: false,
+            message: error instanceof Error ? error.message : 'Failed to delete client'
+        });
+    }
+});
+
 export const clientRouter = router;
