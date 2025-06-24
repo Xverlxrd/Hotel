@@ -4,27 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="Создание схемы БД">
-      <change afterPath="$PROJECT_DIR$/client/public/Login_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(auth)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(auth)/login/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/styles/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/message/message.tsx" afterDir="false" />
+    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="Fixed a CORS error, layout of the login page and notification component">
+      <change afterPath="$PROJECT_DIR$/client/public/Booking_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/Clients_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/Hellp_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/Rooms_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/Tarif_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/booking/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/clients/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/help/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/rooms/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/(main)/tarif/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/header/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/sidebar/sidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/(auth)/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(auth)/login/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/User/WebstormProjects/Hotel/server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev (1).executor": "Run",
-    "npm.dev.executor": "Run",
-    "ts.external.directory.path": "C:\\Users\\User\\WebstormProjects\\Hotel\\client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/WebstormProjects/Hotel/server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\User\\WebstormProjects\\Hotel\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\Hotel\server" />
@@ -119,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -141,8 +138,19 @@
       <workItem from="1749879853961" duration="1239000" />
       <workItem from="1750006027444" duration="2977000" />
       <workItem from="1750047544021" duration="4063000" />
-      <workItem from="1750094003584" duration="1725000" />
+      <workItem from="1750094003584" duration="2517000" />
+      <workItem from="1750148054110" duration="4584000" />
+      <workItem from="1750248087896" duration="12000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed a CORS error, layout of the login page and notification component">
+      <option name="closed" value="true" />
+      <created>1750096089437</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750096089437</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +158,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initializing the project, installing the necessary dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initializing the project, installing the necessary dependencies" />
+    <MESSAGE value="Fixed a CORS error, layout of the login page and notification component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a CORS error, layout of the login page and notification component" />
   </component>
 </project>

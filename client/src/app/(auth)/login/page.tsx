@@ -25,7 +25,7 @@ export default function LoginPage() {
             });
 
             if (response.status >= 200 && response.status < 300) {
-                router.push('/main')
+                router.push('/booking')
             }
         } catch (error: any) {
             console.error("Ошибка входа:", error);
