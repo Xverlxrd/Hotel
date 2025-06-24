@@ -6,7 +6,6 @@ import {BookingService, ClientService, RoomService} from "@/services/inex";
 import Modal from "@/components/modal/modal";
 import Input from "@/components/input/input";
 
-
 const typeTranslations: Record<string, string> = {
     'SINGLE': 'Одноместная',
     'DOUBLE': 'Двухместная',
@@ -21,7 +20,8 @@ const categoryTranslations: Record<string, string> = {
 const tabs = ['Сегодня', 'За неделю', 'За месяц', 'За год', 'За всё время'];
 
 export default function BookingPage() {
-    const [bookings, setBookings] = useState<IBoking[] | null>(null);
+    const [allBookings, setAllBookings] = useState<IBoking[] | null>(null);
+    const [filteredBookings, setFilteredBookings] = useState<IBoking[] | null>(null);
     const [clients, setClients] = useState<IClient[] | null>(null);
     const [rooms, setRooms] = useState<IRoom[] | null>(null);
 
@@ -62,7 +62,8 @@ export default function BookingPage() {
     const fetchBookings = async () => {
         try {
             const data = await bookingService.getAllBookings();
-            setBookings(data);
+            setAllBookings(data);
+            filterBookings(data, activeTab);
         } catch (err) {
             console.error(err);
         }
@@ -93,18 +94,70 @@ export default function BookingPage() {
             } else {
                 await bookingService.cancelBooking(id);
             }
-            fetchBookings()
-
+            fetchBookings();
         } catch (err) {
             console.error(err);
         }
     }
 
+    const filterBookings = (bookings: IBoking[], period: string) => {
+        if (!bookings) return;
+
+        const now = new Date();
+        let filtered = [...bookings];
+
+        switch (period) {
+            case 'Сегодня':
+                filtered = bookings.filter(booking => {
+                    const startDate = new Date(booking.startDate);
+                    return startDate.toDateString() === now.toDateString();
+                });
+                break;
+            case 'За неделю':
+                const weekAgo = new Date();
+                weekAgo.setDate(now.getDate() - 7);
+                filtered = bookings.filter(booking => {
+                    const startDate = new Date(booking.startDate);
+                    return startDate >= weekAgo && startDate <= now;
+                });
+                break;
+            case 'За месяц':
+                const monthAgo = new Date();
+                monthAgo.setMonth(now.getMonth() - 1);
+                filtered = bookings.filter(booking => {
+                    const startDate = new Date(booking.startDate);
+                    return startDate >= monthAgo && startDate <= now;
+                });
+                break;
+            case 'За год':
+                const yearAgo = new Date();
+                yearAgo.setFullYear(now.getFullYear() - 1);
+                filtered = bookings.filter(booking => {
+                    const startDate = new Date(booking.startDate);
+                    return startDate >= yearAgo && startDate <= now;
+                });
+                break;
+            case 'За всё время':
+            default:
+                // Без фильтрации
+                break;
+        }
+
+        setFilteredBookings(filtered);
+    };
+
+    const handleTabChange = (tab: string) => {
+        setActiveTab(tab);
+        if (allBookings) {
+            filterBookings(allBookings, tab);
+        }
+    };
+
     useEffect(() => {
-        fetchBookings()
-        fetchClients()
-        fetchRooms()
-    }, [])
+        fetchBookings();
+        fetchClients();
+        fetchRooms();
+    }, []);
 
     return (
         <div className='flex flex-col gap-9'>
@@ -183,11 +236,11 @@ export default function BookingPage() {
                 {tabs.map((tab, index) => (
                     <button
                         key={tab}
-                        onClick={() => setActiveTab(tab)}
+                        onClick={() => handleTabChange(tab)}
                         className={`px-10 py-2 border-r border-[#c3d3c0] text-[#4b5f4b] transition-colors duration-200
-            ${activeTab === tab ? 'bg-[#5f8762] text-white' : 'hover:bg-[#e8f0e5]'}
-            ${index === tabs.length - 1 ? 'border-r-0' : ''}
-          `}
+                            ${activeTab === tab ? 'bg-[#5f8762] text-white' : 'hover:bg-[#e8f0e5]'}
+                            ${index === tabs.length - 1 ? 'border-r-0' : ''}
+                        `}
                     >
                         {tab}
                     </button>
@@ -220,7 +273,7 @@ export default function BookingPage() {
                         </tr>
                         </thead>
                         <tbody>
-                        {bookings?.map(booking => (
+                        {filteredBookings?.map(booking => (
                             <tr
                                 key={booking.id}
                                 className={`border-b hover:bg-gray-50 ${
