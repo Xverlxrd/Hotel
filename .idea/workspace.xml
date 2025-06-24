@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="Added Clients and Services pages">
-      <change afterPath="$PROJECT_DIR$/client/src/components/input/input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/modal/modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/inex.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/types/types.ts" afterDir="false" />
+    <list default="true" id="d16ed4f4-5e66-42df-8f79-b3afc1cde6d5" name="Changes" comment="End Booking page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/(main)/booking/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(main)/booking/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/(main)/clients/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(main)/clients/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/(main)/help/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(main)/help/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/Clients/clients.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/Clients/clients.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/(main)/rooms/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(main)/rooms/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sidebar/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/inex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/inex.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/services/Booking/booking.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/services/Booking/booking.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +132,7 @@
       <workItem from="1750094003584" duration="2517000" />
       <workItem from="1750148054110" duration="4584000" />
       <workItem from="1750248087896" duration="12000" />
-      <workItem from="1750740163890" duration="10111000" />
+      <workItem from="1750740163890" duration="18595000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed a CORS error, layout of the login page and notification component">
       <option name="closed" value="true" />
@@ -150,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750740277761</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Clients and Services pages">
+      <option name="closed" value="true" />
+      <created>1750751700890</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750751700890</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +168,7 @@
     <MESSAGE value="Initializing the project, installing the necessary dependencies" />
     <MESSAGE value="Fixed a CORS error, layout of the login page and notification component" />
     <MESSAGE value="Added Clients and Services pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Clients and Services pages" />
+    <MESSAGE value="End Booking page" />
+    <option name="LAST_COMMIT_MESSAGE" value="End Booking page" />
   </component>
 </project>

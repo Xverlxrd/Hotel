@@ -165,9 +165,9 @@ export default function ClientsPage() {
             </div>
 
             <div className='bg-white rounded-lg shadow overflow-hidden'>
-                <div className='max-h-[500px] overflow-y-auto'> {/* Добавлен контейнер с фиксированной высотой и скроллом */}
+                <div className='max-h-[500px] overflow-y-auto'>
                     <table className='w-full'>
-                        <thead className="sticky top-0 bg-white z-10"> {/* Заголовок прилипает при скролле */}
+                        <thead className="sticky top-0 bg-white z-10">
                         <tr className='text-left border-b'>
                             <th className='p-2'>Имя</th>
                             <th className='p-2'>Фамилия</th>

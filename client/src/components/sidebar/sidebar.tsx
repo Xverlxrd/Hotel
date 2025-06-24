@@ -26,12 +26,6 @@ export default function SideBar() {
                         <span>Услуги</span>
                     </li>
                 </Link>
-                <Link href='/tarif'>
-                    <li className='flex items-center py-4 gap-6 cursor-pointer'>
-                        <Image src='/Tarif_icon.svg' width={28} height={30} alt='Booking'/>
-                        <span>Скидки</span>
-                    </li>
-                </Link>
                 <Link href='/rooms'>
                     <li className='flex items-center py-4 gap-6 cursor-pointer'>
                         <Image src='/Rooms_icon.svg' width={28} height={30} alt='Booking'/>

@@ -12,6 +12,7 @@ export interface IBoking {
     id: number,
     clientId: number,
     room: IRoom,
+    client: IClient,
     roomId: number,
     startDate: string,
     endDate: string,
